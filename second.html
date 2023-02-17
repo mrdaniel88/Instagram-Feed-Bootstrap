@@ -7,7 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/c89d87666a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Photo Feed</title>
+    <style> body {font-family: 'Roboto', sans-serif;}</style>
 </head>
 
 <body>
@@ -81,13 +85,13 @@
         <div class="row">
             <div class="col mt-3"></div>
             <div class="col mt-3 d-flex justify-content-center">
-                <a class="page-link" href="index.html">
-                    <button type="button" class="btn btn-light">
+                <a class="page-link border-0" href="index.html">
+                    <button type="button" class="btn">
                         <i class="fa-solid fa-grip"></i>
                     </button>
                 </a>
-                <a class="page-link" href="second.html">
-                    <button type="button" class="btn btn-light">
+                <a class="page-link border-0" href="#photoSingle">
+                    <button type="button" class="btn">
                         <i class="fa-regular fa-square"></i>
                     </button>
                 </a>
@@ -98,26 +102,162 @@
 
     <!-- Single Photo -->
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="photoSingle">
         <div class="row">
             <div class="col mt-4"></div>
             <div class="col mt-4">
                 <div class="card">
                     <div class="card-body">
-                        <!-- <div class="w-100 d-flex">
-                            <h5 class="text-start">Look at this beach!</h5>
-                            <p class="text-end">12/15</p>
-                        </div> -->
-                        <div class="row">
-                            <div class="col-10">
-                                <h5>Look at this beach!</h5>
-                            </div>
-                            <div class="col-2">
-                                <p class="fs-6">12/15</p>
-                            </div>
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this beach!</strong></h5>
+                            <p>12/15</p>
                         </div>
                         <img src="Pictures/Beach.jpg" class="img-fluid" alt="beach">
                         <p class="card-text"><strong>204 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this building!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Building.jpeg" class="img-fluid" alt="building">
+                        <p class="card-text"><strong>104 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this code!</strong> </h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Coding.jpg" class="img-fluid" alt="coding">
+                        <p class="card-text"><strong>254 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this dog!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Dog.jpg" class="img-fluid" alt="dog">
+                        <p class="card-text"><strong>1004 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this door!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Door.jpg" class="img-fluid" alt="door">
+                        <p class="card-text"><strong>204 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this Food!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Food.jpg" class="img-fluid" alt="food">
+                        <p class="card-text"><strong>204 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this house!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/House.jpeg" class="img-fluid" alt="house">
+                        <p class="card-text"><strong>294 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this museum!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Minimalist.jpg" class="img-fluid" alt="minimalist">
+                        <p class="card-text"><strong>354 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this sunset!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Sunset.jpg" class="img-fluid" alt="sunset">
+                        <p class="card-text"><strong>504 Likes</strong><br>This is an example is a very good photo that
                             you can put on Instagram</p>
                     </div>
                 </div>
