@@ -11,31 +11,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   <title>Photo Feed</title>
-  <style> body {font-family: 'Roboto', sans-serif;}</style>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
 </head>
 
 <body>
   <!-- Navbar -->
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Instagram</a>
-          </li>
-        </ul>
+
+      <div class="container-fluid collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+        <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal"
+          data-bs-target="#publishModal">Create a new post</button>
         <ul class="navbar-nav mb-2 mb-lg-0">
-          <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal"
-            data-bs-target="#publishModal">Create a new post</button>
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">
-              <button type="button" class="btn btn-secondary btn-sm d-flex gap-1"><i class="fa-solid fa-gear"></i><i
+              <button type="button" class="btn btn-secondary d-flex gap-1"><i class="fa-solid fa-gear"></i><i
                   class="fa-solid fa-caret-down"></i></button>
             </a>
             <ul class="dropdown-menu dropdown-menu-lg-end" aria-labelledby="navbarDropdown">
@@ -50,7 +51,6 @@
           </li>
         </ul>
       </div>
-    </div>
   </nav>
 
   <!-- Modal -->
@@ -80,11 +80,11 @@
   </div>
 
   <!-- Icons grid -->
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <div class="row">
       <div class="col mt-3"></div>
       <div class="col mt-3 d-flex justify-content-center">
-        <a class="page-link border-0" href="#photoGrid">
+        <a class="page-link border-0" href="index.html">
           <button type="button" class="btn">
             <i class="fa-solid fa-grip"></i>
           </button>
@@ -97,26 +97,208 @@
       </div>
       <div class="col mt-3"></div>
     </div>
-  </div>
+  </div> -->
 
-  <!-- Photo Grid -->
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <button data-bs-toggle="pill" data-bs-target="#photoGrid" type="button" class="btn" aria-selected="true">
+        <i class="fa-solid fa-grip"></i>
+      </button>
+    </li>
+    <li class="nav-item">
+     <button data-bs-toggle="pill" data-bs-target="#photoSingle" type="button" class="btn" aria-selected="false">
+        <i class="fa-regular fa-square"></i>
+      </button>
+    </li>
+  </ul>
 
-  <div class="container-fluid" id="photoGrid">
-    <div class="row">
-      <div class="col mt-4"><img src="Pictures/Beach.jpg" class="img-fluid" alt="beach"></div>
-      <div class="col mt-4"><img src="Pictures/Building.jpeg" class="img-fluid" alt="building"></div>
-      <div class="col mt-4"><img src="Pictures/Coding.jpg" class="img-fluid" alt="coding"></div>
+  
+
+  <div class="tab-content">
+    <!-- PhotoGrid -->
+    <div class="tab-pane fade show active" id="photoGrid" role="tabpanel" aria-labelledby="home-tab">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Beach.jpg" class="img-fluid" alt="beach"></div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Building.jpeg" class="img-fluid" alt="building"></div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Coding.jpg" class="img-fluid" alt="coding"></div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Dog.jpg" class="img-fluid" alt="dog"></div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Door.jpg" class="img-fluid" alt="door"></div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Food.jpg" class="img-fluid" alt="food"></div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/House.jpeg" class="img-fluid" alt="house"></div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Minimalist.jpg" class="img-fluid" alt="minimalist">
+          </div>
+          <div class="col-md-6 col-lg-4 mt-4"><img src="Pictures/Sunset.jpg" class="img-fluid" alt="sunset"></div>
+        </div>
+      </div>
     </div>
-    <div class="row">
-      <div class="col mt-4"><img src="Pictures/Dog.jpg" class="img-fluid" alt="dog"></div>
-      <div class="col mt-4"><img src="Pictures/Door.jpg" class="img-fluid" alt="door"></div>
-      <div class="col mt-4"><img src="Pictures/Food.jpg" class="img-fluid" alt="food"></div>
+    <!-- PhotoSingle-->
+    <div class="tab-pane fade" id="photoSingle" role="tabpanel" aria-labelledby="profile-tab">
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this beach!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Beach.jpg" class="img-fluid" alt="beach">
+                        <p class="card-text"><strong>204 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this building!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Building.jpeg" class="img-fluid" alt="building">
+                        <p class="card-text"><strong>104 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this code!</strong> </h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Coding.jpg" class="img-fluid" alt="coding">
+                        <p class="card-text"><strong>254 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this dog!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Dog.jpg" class="img-fluid" alt="dog">
+                        <p class="card-text"><strong>1004 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this door!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Door.jpg" class="img-fluid" alt="door">
+                        <p class="card-text"><strong>204 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this Food!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Food.jpg" class="img-fluid" alt="food">
+                        <p class="card-text"><strong>204 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this house!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/House.jpeg" class="img-fluid" alt="house">
+                        <p class="card-text"><strong>294 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this museum!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Minimalist.jpg" class="img-fluid" alt="minimalist">
+                        <p class="card-text"><strong>354 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
+
+        <div class="row">
+            <div class="col mt-4"></div>
+            <div class="col mt-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5><strong>Look at this sunset!</strong></h5>
+                            <p>12/15</p>
+                        </div>
+                        <img src="Pictures/Sunset.jpg" class="img-fluid" alt="sunset">
+                        <p class="card-text"><strong>504 Likes</strong><br>This is an example is a very good photo that
+                            you can put on Instagram</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mt-4"></div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col mt-4"><img src="Pictures/House.jpeg" class="img-fluid" alt="house"></div>
-      <div class="col mt-4"><img src="Pictures/Minimalist.jpg" class="img-fluid" alt="minimalist"></div>
-      <div class="col mt-4"><img src="Pictures/Sunset.jpg" class="img-fluid" alt="sunset"></div>
-    </div>
+
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
